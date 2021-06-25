@@ -1,3 +1,4 @@
+import moment from 'moment';
 import React from 'react';
 import { View, Text,Image } from "react-native";
 import {ChatRoom} from "../../types";
@@ -19,12 +20,14 @@ return(
         <Image source={{uri: user.imageUri}} style={styles.avatar} />
         <View style={styles.midContainer}>
         <Text style={styles.username}>{user.name}</Text>
-        <Text style={styles.lastMessage}>{chatRoom.lastMessage.content}</Text>
+        <Text numberOfLines={1} style={styles.lastMessage}>{chatRoom.lastMessage.content}</Text>
         </View>
         </View>
     
-        {/*<Text>{chatRoom.lastMessage.createdAt}</Text>*/}
-        <Text style={styles.time}>Yesterday</Text>
+        <Text style={styles.time}>
+            {moment(chatRoom.lastMessage.createdAt).format("DD/MM/YYYY")}
+            </Text>
+        
     </View>
 )
 };

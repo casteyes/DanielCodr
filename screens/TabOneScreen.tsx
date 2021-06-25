@@ -11,8 +11,11 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
      <FlatList 
+     style={{width: '100%'}}
      data={chatRooms} 
-     renderItem={({item}) => <ChatListItem chatRoom={item} />} />
+     renderItem={({item}) => <ChatListItem chatRoom={item} />} 
+     keyExtractor={(item) => item.id}
+     />
     </View>
   );
 }

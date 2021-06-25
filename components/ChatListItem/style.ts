@@ -19,6 +19,7 @@ fontSize: 16,
 lastMessage:{
     fontSize: 16,
     color: 'grey',
+    
 
 },
 
@@ -27,7 +28,7 @@ justifyContent: 'space-around',
 },
 
 time:{
-    fontSize: 16,
+    fontSize: 14,
     color: 'grey',
 
 },
