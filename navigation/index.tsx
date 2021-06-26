@@ -58,7 +58,21 @@ function RootNavigator() {
     }}
 
       />
-      <Stack.Screen name="ChatRoom" component={ChatRoomScreen} options={{ title: 'Chat Room' }} />
+      <Stack.Screen name="ChatRoom" component={ChatRoomScreen} options={({ route }) => ({ 
+        title: route.params.name,
+        headerRight: () => (
+          <View style={{
+            flexDirection:'row',
+            width: 35,
+      
+          }}>
+              <Entypo name="dots-three-vertical" size={24} color={'white'}/>
+          </View>
+        )
+
+      
+    })}
+        />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );

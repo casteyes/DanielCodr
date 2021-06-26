@@ -22,12 +22,12 @@ export default [{
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
   }, {
     id: 'u3',
-    name: 'Daniil',
+    name: 'Taylor',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg',
   }],
   lastMessage: {
     id: 'm2',
-    content: 'How are you doing?',
+    content: 'I love Survivor :)',
     createdAt: '2020-10-02T15:40:00.000Z',
   }
 }, {
