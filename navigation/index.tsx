@@ -9,6 +9,7 @@ import * as React from 'react';
 import { ColorSchemeName, View } from 'react-native';
 import Colors from '../constants/Colors';
 import {Octicons, Entypo} from '@expo/vector-icons'
+import ChatRoomScreen from '../screens/ChatRoomScreen'
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
@@ -57,6 +58,7 @@ function RootNavigator() {
     }}
 
       />
+      <Stack.Screen name="ChatRoom" component={ChatRoomScreen} options={{ title: 'Chat Room' }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );
