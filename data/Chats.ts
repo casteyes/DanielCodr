@@ -3,11 +3,11 @@ export default {
 	users: [{
 		id: 'u1',
 		name: 'Vadim',
-		imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/1.jpg',
+		
 	}, {
 		id: 'u2',
 		name: 'Lukas',
-		imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+		
 	}],
 	messages: [{
 		id: 'm1',
@@ -16,7 +16,7 @@ export default {
 		user: {
 			id: 'u1',
 			name: 'Vadim',
-			imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+			
 		},
 	}, {
 		id: 'm2',
@@ -25,7 +25,7 @@ export default {
 		user: {
 			id: 'u2',
 			name: 'Lukas',
-			imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+			
 		},
 	}, {
 		id: 'm3',
@@ -34,7 +34,7 @@ export default {
 		user: {
 			id: 'u2',
 			name: 'Lukas',
-			imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+			
 		},
 	}, {
 		id: 'm4',
@@ -43,7 +43,7 @@ export default {
 		user: {
 			id: 'u1',
 			name: 'Vadim',
-			imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+			
 		},
 	}, {
 		id: 'm5',
@@ -52,7 +52,7 @@ export default {
 		user: {
 			id: 'u1',
 			name: 'Vadim',
-			imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+			
 		},
 	}, {
 		id: 'm6',
@@ -61,7 +61,7 @@ export default {
 		user: {
 			id: 'u2',
 			name: 'Lukas',
-			imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+			
 		},
 	}, {
 		id: 'm7',
@@ -70,7 +70,7 @@ export default {
 		user: {
 			id: 'u1',
 			name: 'Vadim',
-			imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/2.jpg',
+			
 		},
 	}]
 }

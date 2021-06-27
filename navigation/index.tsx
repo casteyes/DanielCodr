@@ -6,10 +6,11 @@
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
-import { ColorSchemeName, View } from 'react-native';
+import { ColorSchemeName, View, Image } from 'react-native';
 import Colors from '../constants/Colors';
 import {Octicons, Entypo} from '@expo/vector-icons'
 import ChatRoomScreen from '../screens/ChatRoomScreen'
+import styles from "../components/ChatListItem/style"
 
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
@@ -29,6 +30,7 @@ export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeNa
 // A root stack navigator is often used for displaying modals on top of all other content
 // Read more here: https://reactnavigation.org/docs/modal
 const Stack = createStackNavigator<RootStackParamList>();
+
 
 function RootNavigator() {
   return (
@@ -64,8 +66,8 @@ function RootNavigator() {
           <View style={{
             flexDirection:'row',
             width: 35,
-      
           }}>
+          
               <Entypo name="dots-three-vertical" size={24} color={'white'}/>
           </View>
         )
