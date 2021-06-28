@@ -38,7 +38,7 @@ export default {
 		},
 	}, {
 		id: 'm4',
-		content: 'Good as well bruh, bout to get that back end working bruh',
+		content: 'Good as well bruh, bout to get that login page working bruh',
 		createdAt: '2020-10-03T14:50:00.000Z',
 		user: {
 			id: 'u1',
