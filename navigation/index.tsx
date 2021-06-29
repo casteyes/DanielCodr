@@ -6,7 +6,7 @@
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
-import { ColorSchemeName, View, Image } from 'react-native';
+import { ColorSchemeName, View, Image, TouchableWithoutFeedback  } from 'react-native';
 import Colors from '../constants/Colors';
 import {Octicons, Entypo} from '@expo/vector-icons'
 import ChatRoomScreen from '../screens/ChatRoomScreen'
@@ -49,7 +49,7 @@ function RootNavigator() {
       }
       }}>
       <Stack.Screen name="Root" component={BottomTabNavigator} 
-      options={{title:'Codr',
+      options={{title: 'Codr',
       
       headerRight:() => (
         <View style={{flexDirection:'row', width: 60, justifyContent:'space-between', marginRight:10}}>
@@ -67,14 +67,16 @@ function RootNavigator() {
             flexDirection:'row',
             width: 35,
           }}>
-          
+              <TouchableWithoutFeedback > 
               <Entypo name="dots-three-vertical" size={24} color={'white'}/>
+              </TouchableWithoutFeedback>
           </View>
         )
 
       
     })}
         />
+        
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
   );
