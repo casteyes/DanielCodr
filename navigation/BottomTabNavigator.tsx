@@ -13,6 +13,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
+import TeamsScreen from '../screens/TeamsScreen'
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
 const BottomTab = createMaterialTopTabNavigator<BottomTabParamList>();
@@ -53,7 +54,7 @@ export default function BottomTabNavigator() {
       />
         <BottomTab.Screen
         name="Teams"
-        component={TabTwoNavigator}
+        component={TeamsScreen}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
