@@ -7,7 +7,7 @@ import chatRooms from '../data/ChatRooms'
 
 
 
-export default function TabOneScreen() {
+export default function TeamsScreen() {
   return (
     <View >
 
